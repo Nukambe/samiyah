@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="flex justify-center space-x-6 md:order-2">
         <Socials />
       </div>
-      <div className="mt-8 md:order-1 md:mt-0">
+      <div className="md:order-1 md:mt-0">
         <p className="text-center text-xs leading-5 text-gray-500">
           &copy; 2023 Wesley Chappell
         </p>
