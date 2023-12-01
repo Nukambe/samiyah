@@ -5,7 +5,7 @@ export default async function StatsPage() {
 
   return (
     <div className="bg-gray-900 h-full py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 text-center flex flex-col justify-center h-full lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             STATS
@@ -17,7 +17,7 @@ export default async function StatsPage() {
         </div>
         <ul
           role="list"
-          className="mt-16"
+          className="my-auto"
         >
           {attributes.map((attribute) => (
             <li

@@ -8,7 +8,7 @@ export default function ClubsPage() {
     }
   ]
   return (
-    <div className="flow-root w-full bg-gray-900">
+    <div className="flow-root h-full w-full bg-gray-900">
       <div className="mx-auto mt-16 max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
