@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default async function Home() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20">
+    <div className="relative isolate overflow-hidden h-[900px] bg-gray-900 pb-16 pt-14 sm:pb-20">
       <Image
         src="/landing-bg.webp"
         alt="olympic volleybal"
