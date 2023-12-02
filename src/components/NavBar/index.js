@@ -11,7 +11,7 @@ export default function NavBar() {
     { title: "Stats", path: "/stats" },
     { title: "Clubs", path: "/clubs" },
     { title: "Tournaments", path: "/tournaments" },
-    { title: "Awards", path: "/awards" },
+    // { title: "Awards", path: "/awards" },
     { title: "Contact", path: "/contact" },
     { title: "Dashboard", path: "/dashboard" },
   ];
