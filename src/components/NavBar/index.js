@@ -17,24 +17,19 @@ export default function NavBar() {
   ];
 
   return (
-    <div className="max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className="flex h-16 items-center justify-end">
-        <div className="flex space-x-4">
-          {pages.map((page, index) => (
-            <Link
-              key={index}
-              href={page.path}
-              className={`rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white ${
-                pathname === page.path
-                  ? "bg-gray-900 cursor-default"
-                  : "hover:bg-gray-700"
-              }`}
-            >
-              {page.title}
-            </Link>
-          ))}
-        </div>
-      </div>
+    <div className="flex space-x-4">
+      {pages.map((page, index) => (
+        <Link
+          key={index}
+          href={page.path}
+          className={`rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white ${pathname === page.path
+            ? "bg-gray-900 cursor-default"
+            : "hover:bg-gray-700"
+            }`}
+        >
+          {page.title}
+        </Link>
+      ))}
     </div>
   );
 }

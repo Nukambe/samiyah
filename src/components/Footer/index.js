@@ -2,7 +2,7 @@ import Socials from "../Socials";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-700 mt-auto h-16 flex items-center justify-evenly">
+    <footer className="bg-gray-800 text-gray-700 h-16 flex items-center justify-evenly">
       <div className="flex justify-center space-x-6 md:order-2">
         <Socials />
       </div>

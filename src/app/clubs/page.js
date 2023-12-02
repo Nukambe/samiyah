@@ -1,28 +1,42 @@
+import PageContainer from "@/components/PageContainer"
+import TimelineItem from "@/components/Timeline/TimelineItem"
+
 export default function ClubsPage() {
   const timeline = [
     {
-      name: 'club',
-      start: '1',
-      end: '2',
+      name: 'Mizuno',
+      start: '2023-01',
+      end: '',
       current: true
+    },
+    {
+      name: 'Excel Volleyball Club',
+      start: '2022-01',
+      end: '2023-01',
+      current: false
+    },
+    {
+      name: 'CCVC',
+      start: '2021-01',
+      end: '2022-01',
+      current: false
     }
   ]
-  return (
-    <div className="flow-root h-full w-full bg-gray-900">
-      <div className="mx-auto mt-16 max-w-7xl px-6 text-center lg:px-8">
-        <div className="mx-auto max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            CLUBS
-          </h2>
-          <p className="mt-4 text-lg leading-8 text-gray-400">
-            Explore my volleyball journey and discover the attributes that set
-            me apart on the court—precision, determination, and passion.
-          </p>
-        </div>
-      </div>
-      <ul role="list" className="mx-auto my-16 w-96">
 
+  return (
+    <PageContainer
+      header="Clubs"
+      description="Explore the teams that shaped my volleyball journey. Delve into the diverse experiences, camaraderie, and growth fostered by each club, painting a vivid picture of my volleyball story."
+    >
+      <div className="mx-auto w-8 h-8 rounded-full bg-white border-solid border-white border-2" />
+      <ul role="list">
+        {timeline.map((club, index) => (
+          <li key={index}>
+            <TimelineItem club={club} left={index % 2 === 0} />
+          </li>
+        ))}
       </ul>
-    </div>
+      <div className="mx-auto w-8 h-8 rounded-full bg-white border-solid border-white border-2" />
+    </PageContainer>
   )
 }
