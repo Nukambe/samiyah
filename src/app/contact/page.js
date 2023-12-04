@@ -9,22 +9,22 @@ export default function ContactPage() {
     >
       <ContactCard
         title='Facebook'
-        link='facebook.com'
+        link='https://facebook.com'
         className='bg-blue-400'
       />
       <ContactCard
         title='Twitter'
-        link='twitter.com'
+        link='https://twitter.com'
         className=' bg-cyan-400'
       />
       <ContactCard
         title='Instagram'
-        link='instagram.com'
+        link='https://instagram.com'
         className='bg-orange-400'
       />
       <ContactCard
         title='Youtube'
-        link='youtube.com'
+        link='https://www.youtube.com/@chappellman'
         className='bg-red-400'
       />
       <ContactCard

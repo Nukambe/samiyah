@@ -9,12 +9,12 @@ export default async function StatsPage() {
     me apart on the court—precision, determination, and passion.">
       <ul
         role="list"
-        className="my-auto"
+        className="my-auto divide-y divide-gray-700 space-y-2"
       >
         {attributes.map((attribute) => (
           <li
             key={attribute.id}
-            className=" mx-auto mt-4 flex items-center justify-between w-80"
+            className=" mx-auto flex items-center justify-between py-2"
           >
             <p className="text-sm leading-6 text-gray-400">
               {attribute.attribute}
