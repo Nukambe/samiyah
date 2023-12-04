@@ -8,29 +8,19 @@ export default function ContactPage() {
       description="Have questions or opportunities? Reach out here. Your messages are important to me, and I'm eager to hear from you!"
     >
       <ContactCard
-        title='Facebook'
-        link='https://facebook.com'
-        className='bg-blue-400'
+        title="Youtube"
+        link="https://www.youtube.com/playlist?list=PLFLQmPWwG6DhPPFCn90c_aIKTn0evPiT5"
+        className="bg-red-400"
       />
       <ContactCard
-        title='Twitter'
-        link='https://twitter.com'
-        className=' bg-cyan-400'
+        title="Samiyah@Boazcc.com"
+        link="mailto:samiyah@boazcc.com"
+        className="bg-green-500"
       />
       <ContactCard
-        title='Instagram'
-        link='https://instagram.com'
-        className='bg-orange-400'
-      />
-      <ContactCard
-        title='Youtube'
-        link='https://www.youtube.com/@chappellman'
-        className='bg-red-400'
-      />
-      <ContactCard
-        title='samiyah@email.com'
-        link='mailto:samiyah@email.com'
-        className='bg-green-500'
+        title="NCSA College Recruiting"
+        link="https://www.ncsasports.org/womens-volleyball-recruiting/maryland/bel-air/patterson-mill-high-school/samiyah-hubbard"
+        className="bg-blue-500"
       />
     </PageContainer>
   );

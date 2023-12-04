@@ -5,10 +5,10 @@ export default async function Home() {
   return (
     <div
       className="relative isolate  bg-gray-900 pb-16 pt-14 sm:pb-20"
-      style={{ minHeight: '95vh' }}
+      style={{ minHeight: "95vh" }}
     >
       <Image
-        src="/landing-bg.webp"
+        src="/landing-bg.jpg"
         alt="olympic volleybal"
         priority
         width="1920"
