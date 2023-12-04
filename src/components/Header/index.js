@@ -1,6 +1,7 @@
 import { options } from '@/app/api/auth/[...nextauth]/options';
 import { getServerSession } from 'next-auth/next';
 import NavBar from "../NavBar";
+import Hamburger from '../Hamburger';
 import Socials from "../Socials";
 
 export default async function Header() {
@@ -18,9 +19,14 @@ export default async function Header() {
   if (session?.user) pages.push({ title: "Dashboard", path: "/dashboard" })
 
   return (
-    <header className="bg-gray-800 flex items-center justify-evenly h-16">
-      <NavBar pages={pages} />
+    <header className="bg-gray-800 flex items-center justify-between sm:justify-evenly h-16 px-6">
+      <div className='hidden sm:block'>
+        <NavBar pages={pages} className='space-x-4 hidden sm:flex' />
+      </div>
       <Socials />
+      <div className='block sm:hidden'>
+        <Hamburger pages={pages} />
+      </div>
     </header>
   );
 }
