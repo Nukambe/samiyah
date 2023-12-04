@@ -3,18 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function NavBar() {
+export default function NavBar({ pages }) {
   const pathname = usePathname();
-
-  const pages = [
-    { title: "Home", path: "/" },
-    { title: "Stats", path: "/stats" },
-    { title: "Clubs", path: "/clubs" },
-    { title: "Tournaments", path: "/tournaments" },
-    // { title: "Awards", path: "/awards" },
-    { title: "Contact", path: "/contact" },
-    { title: "Dashboard", path: "/dashboard" },
-  ];
 
   return (
     <div className="flex space-x-4">

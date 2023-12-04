@@ -10,6 +10,7 @@ export default async function Home() {
       <Image
         src="/landing-bg.webp"
         alt="olympic volleybal"
+        priority
         width="1920"
         height="1080"
         className="absolute inset-0 -z-10 h-full w-full object-cover"
