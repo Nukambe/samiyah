@@ -1,27 +1,9 @@
 import PageContainer from "@/components/PageContainer"
 import TimelineItem from "@/components/Timeline/TimelineItem"
+import { getDocuments } from "@/db"
 
-export default function ClubsPage() {
-  const timeline = [
-    {
-      name: 'Mizuno',
-      start: '2023-01',
-      end: '',
-      current: true
-    },
-    {
-      name: 'Excel Volleyball Club',
-      start: '2022-01',
-      end: '2023-01',
-      current: false
-    },
-    {
-      name: 'CCVC',
-      start: '2021-01',
-      end: '2022-01',
-      current: false
-    }
-  ]
+export default async function ClubsPage() {
+  const timeline = await getDocuments('clubs');
 
   return (
     <PageContainer

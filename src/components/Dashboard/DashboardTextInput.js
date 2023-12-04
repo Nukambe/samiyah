@@ -1,8 +1,6 @@
 'use client'
 
-import { useState } from "react"
-
-export default function DashboardTextInput({ label, value }) {
+export default function DashboardTextInput({ label, value, onChange }) {
     return (
         <label
             htmlFor={label.toLowerCase()}
@@ -14,7 +12,8 @@ export default function DashboardTextInput({ label, value }) {
                 name={label.toLowerCase()}
                 id={label.toLowerCase()}
                 className="flex-1 border-0 bg-gray-600 py-1.5 pl-1 text-white focus:ring-0 sm:text-sm sm:leading-6 rounded-md"
-                placeholder={value}
+                value={value}
+                onChange={onChange}
             />
         </label>
     )
